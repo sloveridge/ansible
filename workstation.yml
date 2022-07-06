@@ -12,3 +12,5 @@
       tags: git
     - include: tasks/tools.yml
       tags: tools
+    - include: tasks/docker.yml
+      tags: docker
