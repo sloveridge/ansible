@@ -22,7 +22,6 @@
       - git
       - gh
 
-
 - name: Git email
   git_config:
     name: user.email
