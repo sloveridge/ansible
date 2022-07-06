@@ -10,3 +10,5 @@
   tasks:
     - include: tasks/git.yml
       tags: git
+    - include: tasks/tools.yml
+      tags: tools

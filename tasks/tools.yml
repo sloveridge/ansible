@@ -1,0 +1,17 @@
+- name: tools
+  become: true
+  apt:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+      - curl
+      - jq
+      - unzip
+      - lsof
+      - htop
+      - ripgrep
+      - tmux
+      - wireshark
+      - bat
+      - fzf 
