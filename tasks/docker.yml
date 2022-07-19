@@ -27,3 +27,11 @@
       - docker-ce-cli
       - containerd.io
       - docker-compose-plugin
+
+- name: add users to docker group
+  become: true
+  user: 
+    name: "{{ item }}"
+    groups: docker
+    append: yes
+  loop: "{{ admin_users }}"

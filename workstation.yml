@@ -1,4 +1,7 @@
 - hosts: localhost
+  vars:
+    admin_users:
+      - sloveridge
   pre_tasks:
   - name: Update Apt
     become: true
@@ -8,9 +11,9 @@
     tags:
       - install
   tasks:
-    - include: tasks/git.yml
+    - import_tasks: tasks/git.yml
       tags: git
-    - include: tasks/tools.yml
+    - import_tasks: tasks/tools.yml
       tags: tools
-    - include: tasks/docker.yml
+    - import_tasks: tasks/docker.yml
       tags: docker

@@ -15,3 +15,5 @@
       - wireshark
       - bat
       - fzf 
+      - protobuf-compiler
+      - protoc-gen-go
